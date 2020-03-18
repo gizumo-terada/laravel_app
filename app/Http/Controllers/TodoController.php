@@ -47,7 +47,7 @@ class TodoController extends Controller
         $input = $request->all();
         $input['user_id'] = Auth::id();
         $this->todo->fill($input)->save();
-        return redirect()->to('todo');
+        return redirect()->route('todo.index');
     }
 
     /**
@@ -87,7 +87,7 @@ class TodoController extends Controller
     {
         $input = $request->all();
         $this->todo->find($id)->fill($input)->save();
-        return redirect()->to('todo');
+        return redirect()->route('todo.index');
     }
 
     /**
@@ -99,6 +99,6 @@ class TodoController extends Controller
     public function destroy($id)
     {
         $this->todo->find($id)->delete();
-        return redirect()->to('todo');
+        return redirect()->route('todo.index');
     }
 }
