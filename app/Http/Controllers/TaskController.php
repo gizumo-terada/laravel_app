@@ -6,12 +6,6 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
-<<<<<<< HEAD
-    public function gizumo() {
-        return 'gizumo';
-    }
-    
-=======
     public function lv1() {
         return 'gizumo';
     }
@@ -24,5 +18,4 @@ class TaskController extends Controller
         $ans = $request->all();
         return view('lv2Ans',compact('ans'));
     }
->>>>>>> gizumo_lv2
 }
