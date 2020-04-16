@@ -20,4 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/gizumo_lv1','TaskController@lv1')->name('gizumo_lv1');
 Route::get('/gizumo_lv2','TaskController@lv2')->name('gizumo_lv2');
+Route::get('/gizumo_lv4','TaskController@lv4')->name('gizumo_lv4');
 Route::post('/gizumo_lv2Ans','TaskController@lv2Ans')->name('gizumo_lv2Ans');
